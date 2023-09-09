@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <img
+        data-testid="slackDisplayImage"
+        src="patrick.JPG"
+        alt="patrick"
+      />
+      <main>
+        <div class="details">
+          <h1 data-testid="slackUserName">Patrick Olanrewaju Ogboriga</h1>
+          <p data-testid="myTrack">Frontend Track</p>
+          <div id="github">
+            <a href="https://github.com/tha-street" data-testid="githubURL">
+              Github
+            </a>
+          </div>
+        </div>
+        <div class="d_info">
+          <div data-testid="currentUTCTime">
+            <span id="utcTime"></span>
+          </div>
+          <div data-testid="currentDayOfTheWeek">
+            <span id="dayOfWeek"></span>.
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
