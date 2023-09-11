@@ -15,13 +15,9 @@ const daysOfWeek = [
   function updateElapsedTime() {
     const elapsedTimeElement = document.getElementById('utcTime');
   
-    const currentTime = new Date().getTime();
+    const currentTimeMs = Date.now();
   
-    const jsCreationTime = new Date('1995-05-23T00:00:00.000Z').getTime();
-  
-    const elapsedMilliseconds = currentTime - jsCreationTime;
-  
-    elapsedTimeElement.textContent = elapsedMilliseconds.toString();
+    elapsedTimeElement.textContent = currentTimeMs.toString();
   }
   updateElapsedTime();
   setInterval(updateElapsedTime, 1000);
